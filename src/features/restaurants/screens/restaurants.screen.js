@@ -1,6 +1,7 @@
 import React from "react";
-import { StatusBar, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { StatusBar, SafeAreaView, StyleSheet, View } from "react-native";
 import { Searchbar } from "react-native-paper";
+import { RestaurantInfo } from "../components/restaurant-info.component";
 export const RestaurantsScreen = () => (
   // this is the react Fragment Element container
   // added the android status bar line 10
@@ -9,7 +10,7 @@ export const RestaurantsScreen = () => (
       <Searchbar />
     </View>
     <View style={styles.list}>
-      <Text> list </Text>
+      <RestaurantInfo />
     </View>
   </SafeAreaView>
 );
